@@ -1,0 +1,50 @@
+{
+  "name": "admin",
+  "version": "1.0.0",
+  "description": "yoke",
+  "private": true,
+  "egg": {
+    "declarations": true
+  },
+  "dependencies": {
+    "egg": "^3.17.5",
+    "egg-scripts": "2",
+    "nodemailer": "^6.9.14",
+    "svg-captcha": "^1.4.0"
+  },
+  "devDependencies": {
+    "bcryptjs": "^2.4.3",
+    "dayjs": "^1.11.12",
+    "egg-bcrypt": "^1.1.0",
+    "egg-bin": "6",
+    "egg-cors": "^3.0.1",
+    "egg-jwt": "^3.1.7",
+    "egg-mock": "5",
+    "egg-mongoose": "^4.0.1",
+    "egg-redis": "^2.6.0",
+    "egg-swagger-doc": "^2.3.2",
+    "egg-validate-plus": "^1.1.6",
+    "eslint": "8",
+    "eslint-config-egg": "13",
+    "utility": "^2.1.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "start": "egg-scripts start --daemon --title=egg-server-admin",
+    "stop": "egg-scripts stop --title=egg-server-admin",
+    "dev": "egg-bin dev",
+    "test": "npm run lint -- --fix && npm run test:local",
+    "test:local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "npm run lint && npm run cov"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "yoke",
+  "license": "MIT"
+}
